@@ -1,0 +1,19 @@
+#include "unity.h"
+#include "calculator.h"
+
+void setUp(void) {
+}
+
+// Optional but needs to be defined(runs AFTER each test)
+void tearDown(void) {
+}
+
+void test_add_positive_numbers(void) {
+    TEST_ASSERT_EQUAL(5, add(2, 3)); // 2 + 3 is expected to be 5
+}
+
+int main(void) {
+    UNITY_BEGIN();
+    RUN_TEST(test_add_positive_numbers); // Run test function
+    return UNITY_END();
+}
